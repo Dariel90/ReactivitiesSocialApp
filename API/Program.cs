@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,8 +22,9 @@ namespace Reactivities
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var contex = services.GetRequiredService<DataContext>();
-                    contex.Database.Migrate();
+                    var context = services.GetRequiredService<DataContext>();
+                    context.Database.Migrate();
+                    Seed.SeedData(context);
                 }
                 catch (Exception ex)
                 {
