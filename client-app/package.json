@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@types/uuid": "^3.4.7",
     "axios": "^0.19.2",
     "cra-template-typescript": "1.0.0",
     "node-sass": "^4.13.1",
@@ -14,7 +15,8 @@
     "react-scripts": "3.3.0",
     "sass": "^1.25.0",
     "semantic-ui-react": "^0.88.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "uuid": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
