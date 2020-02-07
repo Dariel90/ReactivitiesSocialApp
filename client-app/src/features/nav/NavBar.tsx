@@ -5,7 +5,7 @@ import ActivityStore from '../../app/stores/activityStore'
 
 interface IProps{}
 
-const NavBar: React.FC<IProps> = ({}) => {
+const NavBar: React.FC<IProps> = () => {
     const activityStore = useContext(ActivityStore)
     return (
         <Menu fixed="top" inverted>
